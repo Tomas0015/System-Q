@@ -14,5 +14,5 @@ Our current goal is to make a low cost system with lots of well integrated featu
 - Mains power and backup power for the I2C device bus and the control unit itself
 - Logging of the events happening
 - Some means of communicating with the outside world, in the begining there will most likely only be email available. In the future there might be something more robust such as an GSM modem, if we were to use an LTE one, both emails and SMS messages could be possible. GSM connectivity is not a high priority at the moment.
-- Some kind of local user interface with a simple character LCD and a few buttons for some minor configuration changes and error messages.
+- Some kind of local user interface with a simple character LCD and a few buttons for some minor configuration changes and error messages (there is a big possibility of a fully colour screen for the option of playing doom on your security system, because you obviously need that in your life).
 - A local WEB configuration tool which will not be under any circumstances connected to cloud, It's local, take it or leave it, simple as that. It might be possible to integrate the outputs into the cloud, but the system is able to work completely offline.
