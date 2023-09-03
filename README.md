@@ -6,6 +6,7 @@ Our current goal is to make a low cost system with lots of well integrated featu
 - Battery module for either backup power or completely wireless operation
 - Siren featuring an "ahooga" horn with microphone feedback, to verify that the siren is actually functional (Bus powered due to high power requirements)
 - Central control unit based on some variation of raspberry pi running python scripts with an in-built flasher for the peripherals and potentially some kind of GSM modem for communicating current events.
+- In the current version, the batteries will most likely not be rechargeable and generally not integrated that well. Currently it's 4 AA batteries and a diode to prevent charging them, they are connected to the main boards voltage regulator, because connecting them directly to the uController did not feel right. One possible problem is that the board doesn't know where is it getting power from, that's rather unfortunate.
 
  # Central control unit
 - Based on raspberrry Pi
