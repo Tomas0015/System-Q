@@ -20,3 +20,4 @@ Our current goal is to make a low cost system with lots of well integrated featu
 
 # *We found out:*
 - [3/9/23] The current revision of the PIR board is not suitable for operation with batteries, it's missing a diode so upon a connection of the battery, it would backfeed the entire bus. Suffice to say that's not ideal, it will be fixed in PIR board revision 2 (maybe)
+- [7/9/23] Company funding our project has stepped away, meaning we are developing it on our own and with our own money. This will very likely slow down the development process A LOT. Most likely not due to lack of funds but instead due to lack of motivation.
