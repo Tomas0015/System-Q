@@ -1,5 +1,5 @@
 # System-Q
-System Q is an open source security system, based on the ESP microcontroller, with wireless and wired bus capabilities, that is currently being developed in Hardwario located in Liberec, Czech Republic.
+System Q is an open source security system, based on the ESP microcontroller, with wireless and wired bus capabilities.
 # I like cheese
 We  hate cloud with a passion so there will not be a cloud integration developed by us, the most you will get is a GSM modem sending out SMS messages. 
 Our current goal is to make a low cost system with lots of well integrated features. Here are our current plans of what we will be developing:
