@@ -19,4 +19,4 @@ Our current goal is to make a low cost system with lots of well integrated featu
 - A local WEB configuration tool which will not be under any circumstances connected to cloud, It's local, take it or leave it, simple as that. It might be possible to integrate the outputs into the cloud, but the system is able to work completely offline.
 
 # *We found out:*
-- [3/9/23] The current revision of the PIR board is not suitable for operation with batteries, it's missing a diode so upon a connection of the battery, it would backfeed the entire bus. Suffice to say that's not ideal, it will be fixed in PIR board revision 2
+- [3/9/23] The current revision of the PIR board is not suitable for operation with batteries, it's missing a diode so upon a connection of the battery, it would backfeed the entire bus. Suffice to say that's not ideal, it will be fixed in PIR board revision 2 (maybe)
