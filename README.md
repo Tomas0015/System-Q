@@ -11,7 +11,7 @@ Our current goal is to make a low cost system with lots of well integrated featu
  # Central control unit
 - Based on raspberrry Pi
 - Most likely based on python
-- In built flashing port for the peripherals. For this purpose we've devised a custom interface based on a serial connection.
+- In-built flashing port for the peripherals. For this purpose we've devised a custom interface based on a serial connection.
 - Mains power and backup power for the I2C device bus and the control unit itself
 - Logging of the events happening
 - Some means of communicating with the outside world, in the begining there will most likely only be email available. In the future there might be something more robust such as an GSM modem, if we were to use an LTE one, both emails and SMS messages could be possible. GSM connectivity is not a high priority at the moment.
