@@ -323,6 +323,58 @@
         )
       )
     )
+    (symbol "+3.3V_5" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3.3V_5" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3.3V_5_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3.3V_5_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector:Conn_01x03_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -2115,6 +2167,10 @@
     (stroke (width 0) (type default))
     (uuid 3aeb1643-66ce-4efa-908b-449a53d1c85f)
   )
+  (wire (pts (xy 127 36.83) (xy 144.78 36.83))
+    (stroke (width 0) (type default))
+    (uuid 3b0202c9-e60a-4653-a998-141da0be63e2)
+  )
   (wire (pts (xy 207.01 121.92) (xy 199.39 121.92))
     (stroke (width 0) (type default))
     (uuid 3c88bd0f-e0e7-4447-8743-822894a2c907)
@@ -2490,7 +2546,7 @@
     )
     (pin "1" (uuid f994e20c-7813-4cc6-b67a-9ae381a2da09))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR010") (unit 1)
         )
@@ -2515,7 +2571,7 @@
     )
     (pin "1" (uuid 9b2b9a9d-75cc-4897-ae7f-8251b85a368b))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR024") (unit 1)
         )
@@ -2541,7 +2597,7 @@
     (pin "1" (uuid e0bb90e5-8c82-475d-8467-2587693066b7))
     (pin "2" (uuid a9486ee8-ecdb-40e0-9998-f073d6c3ba7f))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "R1") (unit 1)
         )
@@ -2568,7 +2624,7 @@
     (pin "2" (uuid a5691b9d-2eb5-4c8e-88e5-c1205c268838))
     (pin "3" (uuid 4d6253d4-f1de-40c2-8646-1cc729177499))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "J2") (unit 1)
         )
@@ -2593,7 +2649,7 @@
     )
     (pin "1" (uuid 8fc657b1-a25b-490e-b7ae-a415ef83d910))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR022") (unit 1)
         )
@@ -2618,7 +2674,7 @@
     )
     (pin "1" (uuid ac1292aa-1ae8-4e16-9a09-ece6d170a593))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR01") (unit 1)
         )
@@ -2643,7 +2699,7 @@
     )
     (pin "1" (uuid 90678521-ec01-496a-8678-8c4130d8a82a))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "TP5") (unit 1)
         )
@@ -2670,7 +2726,7 @@
     (pin "2" (uuid 41541309-6dab-496a-b87d-c2c2dd736f37))
     (pin "3" (uuid d69eb68d-41f6-4fdc-850e-3013823ea977))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "Q1") (unit 1)
         )
@@ -2712,7 +2768,7 @@
     (pin "8" (uuid 23fc239a-7d55-41f9-a788-6da1df479e12))
     (pin "9" (uuid 727badac-d89b-4ddd-963f-ba8479e286db))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "U2") (unit 1)
         )
@@ -2738,7 +2794,7 @@
     (pin "1" (uuid 467d01b1-1145-42e1-8dfd-1cf0c04b8404))
     (pin "2" (uuid 61bfae5f-bd82-483c-b79a-94c0722a3455))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "L1") (unit 1)
         )
@@ -2763,7 +2819,7 @@
     )
     (pin "1" (uuid f5dd5dd8-72e7-465d-953f-8afc4637c6bd))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR018") (unit 1)
         )
@@ -2788,7 +2844,7 @@
     )
     (pin "1" (uuid 11cbae2a-244d-4d70-b1f6-c09df5d8ba23))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR023") (unit 1)
         )
@@ -2813,7 +2869,7 @@
     )
     (pin "1" (uuid 0c5648cd-8471-4b59-837e-37e4470fa3d3))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR011") (unit 1)
         )
@@ -2841,7 +2897,7 @@
     (pin "3" (uuid eb162a7c-cc32-4fdf-ad9f-3cd35e10b08b))
     (pin "4" (uuid 2d84791a-e78d-4440-8860-9cd8c4a853ff))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "J4") (unit 1)
         )
@@ -2866,7 +2922,7 @@
     )
     (pin "1" (uuid 3ce23b10-2ae4-487c-b967-ac6dd136d27c))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR026") (unit 1)
         )
@@ -2891,7 +2947,7 @@
     )
     (pin "1" (uuid f0926583-0383-431d-a990-e8ab1c4524f2))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR021") (unit 1)
         )
@@ -2918,7 +2974,7 @@
     (pin "2" (uuid 935fefad-6633-4924-830e-db31bdd329d8))
     (pin "3" (uuid 1c0d3d38-f603-407c-950a-0895fadd774e))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "Q2") (unit 1)
         )
@@ -2944,7 +3000,7 @@
     (pin "1" (uuid bfd6cbca-9079-457f-9b09-aab5a333e10e))
     (pin "2" (uuid b673713d-6484-48f2-bb4d-4490240171f4))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "C1") (unit 1)
         )
@@ -2969,7 +3025,7 @@
     )
     (pin "1" (uuid 2b24f690-a0f4-426a-ad0a-b546b3917b92))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "TP7") (unit 1)
         )
@@ -2994,7 +3050,7 @@
     )
     (pin "1" (uuid 069febca-b317-4286-9cee-06c8a612bdeb))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR04") (unit 1)
         )
@@ -3019,7 +3075,7 @@
     )
     (pin "1" (uuid 9e4c2bb4-a91f-49af-8269-5da2aba13bf5))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR06") (unit 1)
         )
@@ -3046,7 +3102,7 @@
     (pin "2" (uuid 60479253-d4cf-47a7-bff6-55e339166f17))
     (pin "3" (uuid c6e3bc5e-017f-48ed-97d1-5725255db989))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "Q3") (unit 1)
         )
@@ -3071,7 +3127,7 @@
     )
     (pin "1" (uuid 3bd24bd0-0ce7-400d-bfbe-4b04c48e9bff))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR025") (unit 1)
         )
@@ -3096,7 +3152,7 @@
     )
     (pin "1" (uuid 7dca3f3c-5bb9-4075-8a7f-59aeba6d023e))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR019") (unit 1)
         )
@@ -3126,7 +3182,7 @@
     )
     (pin "1" (uuid a3241c3a-4867-48e4-ae04-4ba4d944732b))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "TP6") (unit 1)
         )
@@ -3151,7 +3207,7 @@
     )
     (pin "1" (uuid ca3ad44c-2afc-438a-864e-485fd76b9ce6))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR07") (unit 1)
         )
@@ -3177,7 +3233,7 @@
     (pin "1" (uuid 5f46cd97-09c0-448d-82b9-1adb90da9e20))
     (pin "2" (uuid 24080598-84e8-4f9b-8e56-f978e92c8160))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "R6") (unit 1)
         )
@@ -3203,7 +3259,7 @@
     (pin "1" (uuid 50ec6602-f0a3-48c7-a893-f71af7db1d82))
     (pin "2" (uuid 3a7b122b-b835-4dc5-9078-30df224e9c07))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "C2") (unit 1)
         )
@@ -3229,7 +3285,7 @@
     (pin "1" (uuid a55e3c1c-75b0-4196-877b-9aa1ac214a2a))
     (pin "2" (uuid d3bf6700-e288-4e24-8a01-95be3f73e5c9))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "R5") (unit 1)
         )
@@ -3259,7 +3315,7 @@
     )
     (pin "1" (uuid b4cfea58-c94b-4f04-b370-547d2c720f72))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR03") (unit 1)
         )
@@ -3284,7 +3340,7 @@
     )
     (pin "1" (uuid d5c6112a-0938-49e0-ad41-d7a2b20d5353))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR05") (unit 1)
         )
@@ -3309,7 +3365,7 @@
     )
     (pin "1" (uuid 61f42f24-a6d1-413b-810b-d783c1b9bef7))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR012") (unit 1)
         )
@@ -3335,7 +3391,7 @@
     (pin "1" (uuid d45634aa-c93e-4061-ac6b-b72411a7cf25))
     (pin "2" (uuid cb002f27-1059-4c61-9792-581bc57adb89))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "BZ1") (unit 1)
         )
@@ -3360,7 +3416,7 @@
     )
     (pin "1" (uuid d8e4730d-c6f5-42d6-a290-26c9456ed291))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR013") (unit 1)
         )
@@ -3390,7 +3446,7 @@
     (pin "5" (uuid e1a97073-70a8-4eb4-9cfd-dc56c6540428))
     (pin "6" (uuid 4493dab4-8a15-475f-979e-635d841db62b))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "U1") (unit 1)
         )
@@ -3415,7 +3471,7 @@
     )
     (pin "1" (uuid 8d596fb8-b182-4a67-99b9-986a4ecb3821))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR020") (unit 1)
         )
@@ -3440,7 +3496,7 @@
     )
     (pin "1" (uuid 3b9bb61c-3297-4afb-8c88-55532c09823e))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR09") (unit 1)
         )
@@ -3466,7 +3522,7 @@
     (pin "1" (uuid 4cd209bb-2f33-4fc6-ab5e-d1e751eaa092))
     (pin "2" (uuid 4876f22f-791c-4fc5-8c06-06fb84cacca0))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "R2") (unit 1)
         )
@@ -3491,7 +3547,7 @@
     )
     (pin "1" (uuid 1184596b-518e-4c8c-a7e0-52f148ead28f))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR08") (unit 1)
         )
@@ -3516,7 +3572,7 @@
     )
     (pin "1" (uuid 54a3646e-112f-4944-8d73-3bc16b0e1146))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR016") (unit 1)
         )
@@ -3542,7 +3598,7 @@
     (pin "1" (uuid 3e4e1977-690d-43ca-856e-90237241a401))
     (pin "2" (uuid e1d79a70-b934-4d43-b163-6200601bbdec))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "C5") (unit 1)
         )
@@ -3572,7 +3628,7 @@
     )
     (pin "1" (uuid c085f706-f02b-4e31-aaf2-ea5f9f9d1e54))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR027") (unit 1)
         )
@@ -3598,9 +3654,37 @@
     (pin "1" (uuid 2fe7f0ff-da3a-4319-9fa3-9902f4a2bace))
     (pin "2" (uuid 4881c508-9f0f-47fe-8b95-73cc14a65702))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "C4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 127 36.83 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 953d9bb7-8af3-462b-a146-7b72796e5e00)
+    (property "Reference" "TP8" (at 129.54 32.258 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 129.54 34.798 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm" (at 132.08 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 132.08 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field4" "" (at 127 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 10112459-c94f-4597-b89a-6711a9fa6d63))
+    (instances
+      (project "PIR"
+        (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
+          (reference "TP8") (unit 1)
         )
       )
     )
@@ -3624,7 +3708,7 @@
     (pin "1" (uuid 8b137d1f-9b77-4f83-ab45-20cbc4812b8f))
     (pin "2" (uuid baf4016b-959f-4665-a93e-30760aa84da7))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "D1") (unit 1)
         )
@@ -3649,7 +3733,7 @@
     )
     (pin "1" (uuid 300a7801-5a24-4841-b954-c082173add33))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "TP4") (unit 1)
         )
@@ -3675,9 +3759,34 @@
     (pin "1" (uuid a40be3fb-9a16-4877-83ef-377225f79b6d))
     (pin "2" (uuid 8447adda-4aa8-4923-9517-eac3169d9eaf))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "SW1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "+3.3V_5") (lib_id "power:+3.3V") (at 144.78 36.83 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid c2dc3b17-c65c-428f-951e-e48bca193df1)
+    (property "Reference" "#PWR028" (at 144.78 40.64 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 144.78 31.75 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 144.78 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 144.78 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 558de250-d7e1-44e4-b692-b6586eae3c02))
+    (instances
+      (project "PIR"
+        (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -3701,7 +3810,7 @@
     (pin "1" (uuid 77cc8dc0-f64e-4135-a00c-8b4ba482b0d3))
     (pin "2" (uuid 08124a2d-25d7-42a2-9d1f-f2409ce16e71))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "C3") (unit 1)
         )
@@ -3727,7 +3836,7 @@
     (pin "1" (uuid b101b50d-07ef-4128-8dda-1e9bb1916b95))
     (pin "2" (uuid ad226a0f-c9da-4233-abfa-9a2cdee0a914))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "R3") (unit 1)
         )
@@ -3752,7 +3861,7 @@
     )
     (pin "1" (uuid 9968400d-3ef4-4007-bdfb-863d37e6a483))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "TP1") (unit 1)
         )
@@ -3777,7 +3886,7 @@
     )
     (pin "1" (uuid 8f50b556-e65e-4205-83d0-ab4207156550))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR015") (unit 1)
         )
@@ -3805,7 +3914,7 @@
     (pin "3" (uuid d24c1835-c327-4e2e-9430-e6b5753a5342))
     (pin "4" (uuid df8c16fd-380c-41a5-9bba-7cee72e6729d))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "J3") (unit 1)
         )
@@ -3830,7 +3939,7 @@
     )
     (pin "1" (uuid ed9a9cba-8003-455c-97c4-6f1cf0e032fb))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR017") (unit 1)
         )
@@ -3855,7 +3964,7 @@
     )
     (pin "1" (uuid 5d6ae97e-2822-40df-9d66-053db1065e7e))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR02") (unit 1)
         )
@@ -3881,7 +3990,7 @@
     (pin "1" (uuid f98c1d51-924d-4bed-84ac-7b93d9e4086f))
     (pin "2" (uuid ba7205ee-858a-4271-9bbf-38a6ad292bd3))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "R4") (unit 1)
         )
@@ -3906,7 +4015,7 @@
     )
     (pin "1" (uuid 2717a8dc-eb86-4432-83af-4618e0518c94))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "TP2") (unit 1)
         )
@@ -3931,7 +4040,7 @@
     )
     (pin "1" (uuid e2a40b39-8c32-474d-b579-7bc4515b8b28))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "#PWR014") (unit 1)
         )
@@ -3961,7 +4070,7 @@
     (pin "5" (uuid 15724c24-ab4f-4e65-899b-aee7f76a0579))
     (pin "6" (uuid 5abb9e12-d97a-49a3-93f2-ce099ddd4aac))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "J1") (unit 1)
         )
@@ -3986,7 +4095,7 @@
     )
     (pin "1" (uuid b99123f1-8eab-4a13-aaf2-e07c51fcd134))
     (instances
-      (project "PIR systém Q"
+      (project "PIR"
         (path "/bd84660b-13bb-4554-9f23-8e30376967c6"
           (reference "TP3") (unit 1)
         )
