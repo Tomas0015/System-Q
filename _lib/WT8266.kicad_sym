@@ -9,7 +9,7 @@
     (property "Footprint" "WT8266:WT8266-S1" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://botland.cz/index.php?controller=attachment&id_attachment=1796" (at -8.89 2.54 0)
+    (property "Datasheet" "https://web.archive.org/web/20230921181528id_/http://ttcnc.co.kr/wp-content/uploads/2021/05/WT8266-S1-DataSheet-V2.5.pdf" (at -8.89 2.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_keywords" "802.11 Wi-Fi" (at 0 0 0)
