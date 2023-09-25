@@ -7,6 +7,7 @@ Our current goal is to make a low cost system with lots of well integrated featu
 - Siren featuring an "ahooga" horn with microphone feedback, to verify that the siren is actually functional (Bus powered due to high power requirements)
 - Central control unit based on some variation of raspberry pi running python scripts with an in-built flasher for the peripherals and potentially some kind of GSM modem for communicating current events.
 - In the current version, the batteries will most likely not be rechargeable and generally not integrated that well. Currently it's 4 AA batteries and a diode to prevent charging them, they are connected to the main boards voltage regulator, because connecting them directly to the uController did not feel right. One possible problem is that the board doesn't know where is it getting power from, that's rather unfortunate.
+- 
 
  # Central control unit
 - Based on raspberrry Pi
@@ -21,3 +22,5 @@ Our current goal is to make a low cost system with lots of well integrated featu
 # *We found out:*
 - [3/9/23] The current revision of the PIR board is not suitable for operation with batteries, it's missing a diode so upon a connection of the battery, it would backfeed the entire bus. Suffice to say that's not ideal, it will be fixed in PIR board revision 2 (maybe)
 - [7/9/23] Company funding our project has stepped away, meaning we are developing it on our own and with our own money. This will very likely slow down the development process A LOT. Most likely not due to lack of funds but instead due to lack of motivation. We will still try to continue with further development.
+- [25/9/2023] We found that there is a decently big design problem with the power regulation system. We accidentaly drew the footprint wrongly and thus it never had the chance to work. The problem has beenm resolved in a new revision.
+- We also tested our theory about batteries backfeeding the bus, and unfortunatelly we were right.   
