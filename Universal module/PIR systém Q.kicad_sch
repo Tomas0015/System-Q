@@ -8952,28 +8952,6 @@
 			)
 		)
 	)
-	(global_label "PIR signal"
-		(shape input)
-		(at 105.41 138.43 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4f91ac7f-20d9-4cf7-bf1f-a452b0c8247f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.2527 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ESP_EN"
 		(shape input)
 		(at 152.4 69.85 0)
@@ -9256,6 +9234,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PIR Signal"
+		(shape input)
+		(at 105.41 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c67db312-bba4-413b-8b85-5914eda36299")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.4341 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
