@@ -5,9 +5,9 @@
 	(uuid "bd84660b-13bb-4554-9f23-8e30376967c6")
 	(paper "A3")
 	(title_block
-		(title "Q PIR")
+		(title "EZS Q - Universal module")
 		(rev "5")
-		(company "Radim Kolář, Tomáš Bezányi")
+		(company "Radim Kolář")
 	)
 	(lib_symbols
 		(symbol "+12V_1"
@@ -7549,12 +7549,6 @@
 		(uuid "d614a9ba-7575-421c-9663-ae236b2b1e74")
 	)
 	(junction
-		(at 63.5 222.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "da73a70d-6f26-432f-9687-f893c363fde4")
-	)
-	(junction
 		(at 247.65 236.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7614,6 +7608,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 201.93) (xy 195.58 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05767b0f-ac80-4f34-aeb9-61de5a2e190f")
+	)
+	(wire
+		(pts
 			(xy 49.53 50.8) (xy 52.07 50.8)
 		)
 		(stroke
@@ -7634,7 +7638,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 222.25) (xy 63.5 217.17)
+			(xy 63.5 217.17) (xy 63.5 224.79)
 		)
 		(stroke
 			(width 0)
@@ -7731,16 +7735,6 @@
 			(type default)
 		)
 		(uuid "28b41356-a3c2-44f1-bafe-1adc3136f56b")
-	)
-	(wire
-		(pts
-			(xy 63.5 224.79) (xy 63.5 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b4db6a8-79c5-465c-82a1-e52a892e7475")
 	)
 	(wire
 		(pts
@@ -8886,6 +8880,28 @@
 			)
 		)
 	)
+	(global_label "RX"
+		(shape input)
+		(at 312.42 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0789c0e8-5be9-449a-90ff-3b99768cd37d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 306.9553 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TX"
 		(shape input)
 		(at 105.41 130.81 0)
@@ -9040,6 +9056,28 @@
 			)
 		)
 	)
+	(global_label "GPIO0"
+		(shape input)
+		(at 312.42 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "72e10521-e34e-415e-b42b-9727e626a3af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 303.75 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "battery voltage"
 		(shape input)
 		(at 316.23 146.05 180)
@@ -9053,6 +9091,28 @@
 		(uuid "831f4c24-141c-4ebf-9f31-4306ae30dc30")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 298.7913 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PIR Signal"
+		(shape input)
+		(at 312.42 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8547492f-55b7-4fe4-b957-78460ae278ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 299.3959 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9348,6 +9408,28 @@
 			)
 		)
 	)
+	(global_label "TX"
+		(shape input)
+		(at 312.42 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f1b1309c-e2b9-43a9-b3f4-cb40126a9a40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 307.2577 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GPIO0"
 		(shape input)
 		(at 105.41 128.27 0)
@@ -9519,6 +9601,82 @@
 			(project ""
 				(path "/bd84660b-13bb-4554-9f23-8e30376967c6"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 317.5 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08254b35-21cb-464d-956a-ea82b6f1cd2a")
+		(property "Reference" "keyboard_exp1"
+			(at 318.77 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 318.77 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 317.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 317.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a2e863e-e531-4339-be62-770142fe5cc5")
+		)
+		(pin "2"
+			(uuid "9814bce8-a04e-4314-8c48-94ef492df65a")
+		)
+		(pin "3"
+			(uuid "c5bcb236-3a4c-49b5-b1d3-e3d203d0221d")
+		)
+		(pin "4"
+			(uuid "0b921fe6-f524-43d7-86ed-ec9929d9ce24")
+		)
+		(instances
+			(project "PIR systém Q"
+				(path "/bd84660b-13bb-4554-9f23-8e30376967c6"
+					(reference "keyboard_exp1")
 					(unit 1)
 				)
 			)
@@ -11055,7 +11213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 			(at 321.31 153.67 0)
 			(effects
 				(font
@@ -12497,7 +12655,7 @@
 		(fields_autoplaced yes)
 		(uuid "74c6d82f-7128-4440-b697-ded29f99080c")
 		(property "Reference" "BZ1"
-			(at 280.67 241.3 0)
+			(at 280.67 241.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12505,8 +12663,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Buzzer"
-			(at 280.67 243.84 0)
+		(property "Value" "Siren"
+			(at 280.67 243.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14830,74 +14988,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 63.5 222.25 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb184008-c287-46ed-931f-479ab708d56d")
-		(property "Reference" "TP1"
-			(at 68.58 220.9799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3,3V"
-			(at 68.58 223.5199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 63.5 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 63.5 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0a3c7b8f-c696-4cd8-8235-597e16021025")
-		)
-		(instances
-			(project "PIR systém Q"
-				(path "/bd84660b-13bb-4554-9f23-8e30376967c6"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 195.58 198.12 180)
+		(at 195.58 201.93 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14905,7 +14996,7 @@
 		(dnp no)
 		(uuid "fff3e606-06dd-4f42-8eaa-d380724ed49d")
 		(property "Reference" "TP3"
-			(at 187.96 198.12 0)
+			(at 187.96 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14914,7 +15005,7 @@
 			)
 		)
 		(property "Value" "12V"
-			(at 187.96 200.66 0)
+			(at 187.96 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14923,7 +15014,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 190.5 198.12 0)
+			(at 190.5 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14932,7 +15023,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 198.12 0)
+			(at 190.5 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14941,7 +15032,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 198.12 0)
+			(at 195.58 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
